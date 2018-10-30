@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:id="@+id/textViewRest"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Please enter your Log In details."
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameLogRestWrapper"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#000000"
+            android:layout_below="@id/textViewRest"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etNameLogRest"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_text_log"
+                android:textSize="20sp"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:hint="Restaurant Name"
+                android:inputType="textPersonName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailLogRestWrapper"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#000000"
+            android:layout_below="@id/nameLogRestWrapper"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etEmailLogRest"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_text_log"
+                android:textSize="20sp"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordLogRestWrapper"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="#000000"
+            android:layout_below="@id/emailLogRestWrapper"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/etPassLogRest"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_text_log"
+                android:textSize="20sp"
+                android:ems="10"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvInfoRest"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/passwordLogRestWrapper"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnLogInRest"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvInfoRest"
+            android:layout_alignLeft="@id/passwordLogRestWrapper"
+            android:layout_marginTop="15dp"
+            android:text="LOG IN"
+            android:background="@drawable/round_left"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancelLogRest"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvInfoRest"
+            android:layout_alignRight="@id/passwordLogRestWrapper"
+            android:layout_marginTop="15dp"
+            android:text="CANCEL"
+            android:background="@drawable/round_right"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvForgotPasswordRest"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/btnLogInRest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="FORGOTTEN PASSWORD"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewLogRest"
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvForgotPasswordRest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="New user, Please press SIGN UP"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnSignUpRest"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textViewLogRest"
+            android:layout_marginTop="25dp"
+            android:text="SIGN UP"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@drawable/round_corners"/>
+
+    </RelativeLayout>
+</ScrollView>

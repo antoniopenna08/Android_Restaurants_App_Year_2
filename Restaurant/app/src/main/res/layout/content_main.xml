@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="75dp"
+            android:background="#cce0ff"
+            android:text="Welcome to Restaurant!"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btnRestaurant"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/textView"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_top_left"
+            android:text="RESTAURANT"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnDeals"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/textView"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_top_right"
+            android:text="DEALS"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnCustomer"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/textView"
+            android:layout_below="@+id/btnRestaurant"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_bottom_left"
+            android:text="CUSTOMER"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btnContUs"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/textView"
+            android:layout_below="@id/btnDeals"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_bottom_right"
+            android:text="CONTACT US"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="340dp"
+            android:layout_height="400dp"
+            android:layout_below="@id/btnContUs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/deals"/>
+
+    </RelativeLayout>
+
+</ScrollView>

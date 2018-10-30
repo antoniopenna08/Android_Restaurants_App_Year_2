@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:id="@+id/tvMenuRestName"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Restaurant Name"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="360dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvMenuRestName"
+            android:layout_marginTop="5dp"
+            android:background="#f2f2f2"
+            android:src="@drawable/menu" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/itemName"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@id/imgView"
+            android:layout_below="@id/imgView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#000000">
+
+            <EditText
+                android:id="@+id/etItemName"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_text_log"
+                android:ems="10"
+                android:hint="Enter Food Item Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/itemDescription"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@id/imgView"
+            android:layout_below="@id/itemName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#000000">
+
+            <EditText
+                android:id="@+id/etItemDescription"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_text_log"
+                android:ems="10"
+                android:hint="Enter Item Description"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/itemPrice"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@id/imgView"
+            android:layout_below="@id/itemDescription"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:textColorHint="#000000">
+
+            <EditText
+                android:id="@+id/etItemPrice"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/round_text_log"
+                android:ems="10"
+                android:hint="Enter Item Price"
+                android:inputType="numberDecimal"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/itemPrice"
+            android:layout_alignLeft="@id/imgView"
+            android:layout_marginTop="15dp"
+            android:text="ADD MENU"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnBackMenu"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/itemPrice"
+            android:layout_marginTop="15dp"
+            android:layout_alignRight="@id/imgView"
+            android:text="BACK"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</ScrollView>
